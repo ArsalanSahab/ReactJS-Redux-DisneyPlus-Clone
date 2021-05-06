@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import ImageSlider from './ImageSlider'
 import FranchiseViewer from './FranchiseViewer'
 import MoviesViewer from './MoviesViewer'
+
+
+
+
 function Home() {
 
     return (
