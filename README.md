@@ -1,1 +1,1 @@
-# ReactJS-DisneyPlus-Clone
+# ReactJS-Redux-DisneyPlus-Clone
