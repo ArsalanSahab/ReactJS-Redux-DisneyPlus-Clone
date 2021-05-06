@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header'
 import Home from './components/Home'
-import Info from './components/Info'
+import InfoPage from './components/InfoPage'
 import {
 
   BrowserRouter as Router,
@@ -20,8 +20,8 @@ function App() {
         <Header/>
         <Switch>
 
-            <Route path="/info">
-                <Info/>
+            <Route path="/infopage">
+                <InfoPage/>
             </Route>
 
             <Route path="/">

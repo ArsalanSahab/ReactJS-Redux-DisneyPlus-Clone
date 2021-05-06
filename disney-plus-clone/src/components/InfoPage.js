@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Info() {
+function InfoPage() {
     return (
         <Container>
             
@@ -35,20 +35,36 @@ function Info() {
 
                     <AddToPlaylistButton>
 
+                                <span>+</span>
+
                     </AddToPlaylistButton>
 
                     <GroupWatchButton>
+
+                                <img src="/images/group-icon.png"/>
 
                     </GroupWatchButton>
 
 
             </Controls>
 
+            <Subtitle>
+
+                        PLACE HOLDER TEXT
+
+            </Subtitle>
+
+            <Description>
+
+                        PLACE HOLDRR DESCRIPTION
+
+            </Description>
+
         </Container>
     )
 }
 
-export default Info
+export default InfoPage
 
 
 
@@ -104,6 +120,8 @@ const ImageTitle = styled.div
 const Controls = styled.div
 
 `
+        display: flex;
+        align-items: center;
 
 
 
@@ -112,7 +130,8 @@ const Controls = styled.div
 const PlayButton = styled.button
 
 `
-
+                border-radius: 4px;
+                font-size: 15px;
                 padding: 0px 24px;
                 margin-right: 22px;
                 display: flex;
@@ -139,20 +158,62 @@ const TrailerButton = styled(PlayButton)
                 background: rgba(0, 0, 0, 0.3);
                 border: 1px solid rgb(249, 249, 249);
                 color: rgb(249, 249, 249);
+                text-transform: uppercase;
 
 `
 
 
 const AddToPlaylistButton = styled.button
 
-`
+`               margin-right: 16px;
+                height: 44px;
+                width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 2px solid white;
+                background-color: rgba(0, 0, 0, 0.6); 
+                cursor: pointer;
+
+
+
+                span {
+
+                        font-size: 30px;
+                        color: white;
+                }
 
 `
 
 
-const GroupWatchButton = styled.button
+const GroupWatchButton = styled(AddToPlaylistButton)
+
+`
+                background: rgb(0, 0, 0);
 
 `
 
+const Subtitle = styled.div
+
+`
+                color: rgb(249, 249, 249);
+                font-size: 15px;
+                min-height: 20px;
+                margin-top: 26px;
+
+
+
+`
+
+
+const Description = styled.div
+
+`
+
+                line-height: 1.4;
+                font-size: 20px;
+                margin-top: 16px;
+                color: rgb(249, 249, 249);
 
 `
