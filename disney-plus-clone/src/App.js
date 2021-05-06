@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header'
 import Home from './components/Home'
 import InfoPage from './components/InfoPage'
+import LoginPage from './components/LoginPage'
 import {
 
   BrowserRouter as Router,
@@ -19,6 +20,10 @@ function App() {
 
         <Header/>
         <Switch>
+
+            <Route path="/login">
+                <LoginPage/>
+            </Route>
 
             <Route path="/infopage">
                 <InfoPage/>
