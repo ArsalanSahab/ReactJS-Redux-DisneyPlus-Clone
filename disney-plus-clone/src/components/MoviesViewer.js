@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { selectMovies } from '../features/movies/movieSlice'
 import { useSelector } from 'react-redux'
 
@@ -21,8 +22,12 @@ function MoviesViewer() {
 
                         <Wrap key={movie.id}>
 
-                            
+                            <Link to={`/infopage/${movie.id}`}>
+
                             <img src={movie.cardImg} />
+                            
+
+                            </Link>
 
                         </Wrap>
 

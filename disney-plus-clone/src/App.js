@@ -25,7 +25,7 @@ function App() {
                 <LoginPage/>
             </Route>
 
-            <Route path="/infopage">
+            <Route path="/infopage/:id">
                 <InfoPage/>
             </Route>
 

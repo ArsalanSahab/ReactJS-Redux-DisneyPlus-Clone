@@ -1,19 +1,55 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { useParams } from 'react-router-dom'
+import db from '../firebase'
+
+
 
 function InfoPage() {
+
+
+        const { id } = useParams();
+        const [ movie, setMovie ] = useState();
+
+
+
+        useEffect(() => {
+
+                db.collection("movies")
+                .doc(id)
+                .get()
+                .then((doc) => {
+                        if(doc.exists) {
+                                setMovie(doc.data());
+                        } else {
+
+                                // Reidrect
+                        }
+                })
+
+                
+
+        }, []);
+
+       
+
+
+
     return (
         <Container>
             
-            <Background>
+                { movie && (
+                
+                <>
+                        <Background>
 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWGy8PjSNnh49xx04U1ylc5KW9xQA9qV8wiqgV9NQAyicvGjlGHTMgNZXY5wi2tc049I&usqp=CAU" />
+                    <img src={movie.backgroundImg} />
 
             </Background>
 
             <ImageTitle>
 
-                    <img src="" />
+                    <img src={movie.titleImg} />
 
             </ImageTitle>
 
@@ -50,15 +86,21 @@ function InfoPage() {
 
             <Subtitle>
 
-                        PLACE HOLDER TEXT
+                        {movie.subTitle}
 
             </Subtitle>
 
             <Description>
 
-                        PLACE HOLDRR DESCRIPTION
+                        {movie.description}
 
             </Description>
+                
+                
+             </>   )
+                }
+
+            
 
         </Container>
     )
