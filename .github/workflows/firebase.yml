@@ -56,15 +56,13 @@ jobs:
         
     steps:
     
-      - name : machine ls $GITHUB_WORKSPACE
-        working-directory: ./disney-plus-clone
-        run : "ls -la"
+     
       - uses: actions/checkout@v2
       - name: Download Build
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: build
+          path: ./disney-plus-clone/build
           
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
