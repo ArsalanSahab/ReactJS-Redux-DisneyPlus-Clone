@@ -29,17 +29,13 @@ function App() {
                 <InfoPage/>
             </Route>
 
-            <Route path="/home">
+            <Route path="/">
 
                 <Home/>
 
             </Route>
 
-            <Route path="/">
-
-                <LoginPage/>
-
-            </Route>
+            
 
         </Switch>
 

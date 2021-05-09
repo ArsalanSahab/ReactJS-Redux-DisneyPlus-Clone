@@ -28,7 +28,7 @@ function Header() {
                     photo: user.photoURL
                 }))
 
-                history.push('/home')
+                history.push('/')
             }
         })
     }, [])
@@ -46,7 +46,7 @@ function Header() {
                 email: user.email,
                 photo: user.photoURL
             }))
-            history.push('/home')
+            history.push('/')
         })
 
     }

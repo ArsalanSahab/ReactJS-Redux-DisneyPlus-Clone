@@ -7865,9 +7865,9 @@ is-yarn-global@^0.3.0:
   integrity sha512-VjSeb/lHmkoyd8ryPVIKvOCn4D1koMqY+vqyjjUfc3xyKtP4dYOxM44sZrnqQSzSds3xyOrUTLTC9LVCVgLngw==
 
 is2@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/is2/-/is2-2.0.6.tgz#094f887248b49ba7ce278f8c39f85a70927bb5de"
-  integrity sha512-+Z62OHOjA6k2sUDOKXoZI3EXv7Fb1K52jpTBLbkfx62bcUeSsrTBLhEquCRDKTx0XE5XbHcG/S2vrtE3lnEDsQ==
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/is2/-/is2-2.0.7.tgz#d084e10cab3bd45d6c9dfde7a48599fcbb93fcac"
+  integrity sha512-4vBQoURAXC6hnLFxD4VW7uc04XiwTTl/8ydYJxKvPwkWQrSjInkuM5VZVg6BGr1/natq69zDuvO9lGpLClJqvA==
   dependencies:
     deep-is "^0.1.3"
     ip-regex "^4.1.0"
