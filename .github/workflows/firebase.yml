@@ -6,8 +6,7 @@ name: Firebase CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
 
 jobs:
   build:
@@ -32,7 +31,7 @@ jobs:
     - name: yarn install, build and test
       run: |
         yarn install
-        yarn run build
+        yarn build
         
     - name: Archive Build
       uses: actions/upload-artifact@v2
