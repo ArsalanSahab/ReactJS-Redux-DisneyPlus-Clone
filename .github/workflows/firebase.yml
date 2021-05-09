@@ -35,7 +35,7 @@ jobs:
      - run: npm -g install yarn
      - name : machine ls $GITHUB_WORKSPACE
        working-directory: ./disney-plus-clone
-       run : "ls -la $GITHUB_WORKSPACE"
+       run : "ls -la"
      - name: yarn install, build and test
        working-directory: ./disney-plus-clone
        run: |
