@@ -32,6 +32,8 @@ jobs:
        with:
          node-version: ${{ matrix.node-version }}
      - run: npm -g install yarn
+     - name : machine ls $GITHUB_WORKSPACE
+       run : "ls -la $GITHUB_WORKSPACE"
      - name: yarn install, build and test
        run: |
          yarn install
