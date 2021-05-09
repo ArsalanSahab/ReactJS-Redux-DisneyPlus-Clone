@@ -31,10 +31,13 @@ jobs:
        uses: actions/setup-node@v2
        with:
          node-version: ${{ matrix.node-version }}
+     
      - run: npm -g install yarn
      - name : machine ls $GITHUB_WORKSPACE
+       working-directory: ./disney-plus-clone
        run : "ls -la $GITHUB_WORKSPACE"
      - name: yarn install, build and test
+       working-directory: ./disney-plus-clone
        run: |
          yarn install
          yarn build
@@ -43,7 +46,7 @@ jobs:
        uses: actions/upload-artifact@v2
        with: 
          name: build
-         path: build
+         path: ./disney-plus-clone/build
         
   deploy:
   
@@ -61,7 +64,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: build
+          path: ./disney-plus-clone/build
           
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
