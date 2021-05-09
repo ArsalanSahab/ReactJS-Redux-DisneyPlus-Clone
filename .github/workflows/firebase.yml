@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: disney-plus-clone
+        working-directory: ./disney-plus-clone
 
     strategy:
       matrix:
@@ -26,8 +26,6 @@ jobs:
 
     steps:
      
-     - name: Checking
-       run: ls
      - uses: actions/checkout@v2
      - name: Use Node.js ${{ matrix.node-version }}
        uses: actions/setup-node@v2
@@ -52,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: disney-plus-clone
+        working-directory: ./disney-plus-clone
         
     steps:
     
