@@ -28,7 +28,7 @@ function Header() {
                     photo: user.photoURL
                 }))
 
-                history.push('/')
+                history.push('/home')
             }
         })
     }, [])
@@ -46,7 +46,7 @@ function Header() {
                 email: user.email,
                 photo: user.photoURL
             }))
-            history.push('/')
+            history.push('/home')
         })
 
     }
@@ -127,7 +127,7 @@ function Header() {
 
             </NavMenu>
 
-            <UserImage onClick = {signOut} src={userPhoto}/>
+            <UserImage onClick = {signOut} src="/images/avatar.png"/>
 
 
 
