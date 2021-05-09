@@ -15,7 +15,8 @@ This project corresponds to a video tutorial on youtube, by the clever programme
 
 1. Clone the repo.
 2. Traverse to the "disney-plus-clone" directory.
-3. In the Terminal Type : ` docker-compose up ` to build the image and run.
+3. Build Image with : ` docker-compose build `.
+3. In the Terminal Type : ` docker-compose up ` to run the container.
 4. After above step completes, goto ` localhost:3000 ` on your web browser.
 
 ### To Access Web App Deployed on Firebase 
