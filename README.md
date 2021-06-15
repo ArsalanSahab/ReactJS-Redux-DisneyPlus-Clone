@@ -3,7 +3,7 @@
 This project corresponds to a video tutorial on youtube, by the clever programmer team which i followed along to create a disney plus clone with ReactJS using Redux and Firebase.
 
 
-##### NOTE : I HAVE USED YARN AS THE PACKAGE MANAGER!
+##### NOTE : I HAVE USED YARN AS THE PACKAGE MANAGER FOR THIS PROJECT!
 ### To Run the Project Locally (Without Docker)
 
 1. Clone the repo.
